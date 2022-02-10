@@ -1,0 +1,6 @@
+
+ys = switch trajectory
+ys2 = no switch trajectory
+
+ys mean = 0.1702207516065151, SD=0.06819144274940502
+ys2 mean = 0.15448911726413883, SD=0.08049972696327819

@@ -1,0 +1,18 @@
+#pure guessing
+mean = -1.4615, SD = 6.12
+
+#treat reward as punishment:
+mean = -1.1655, SD = 6.58
+
+#treat punishment as reward
+mean = -1.6695, SD = 6.526581781453443
+
+#treat reward as punishment and punishment as reward
+mean = -13.23, SD = 6.34
+
+#treat as usual - MB only
+mean = 9.99, SD = 6.54
+
+#treat as usual - GP only
+mean = 7.29, SD = 6.28
+

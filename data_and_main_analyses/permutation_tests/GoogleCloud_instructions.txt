@@ -1,0 +1,36 @@
+
+#build Docker file and submit to container registry
+gcloud builds submit --tag gcr.io/linen-shape-303614/chp2 
+
+hallowed-byte-303916
+#create instance template with docker container
+gcloud compute instance-templates create-with-container mfitfix --machine-type e2-standard-2 --region=us-west1 --container-image gcr.io/linen-shape-303614/mfit_fixed 
+
+gcloud compute instance-templates create-with-container chparam1 --machine-type e2-standard-2 --region=us-east1 --container-image gcr.io/hallowed-byte-303916/chpr2
+
+gcloud compute instance-groups managed create ch1 --size 8 --template chp1
+
+
+gcloud compute instance-groups managed create mbb1 --size 8 --template mbbt
+
+#ensure usage reports are sent to bucket
+gcloud compute project-info set-usage-bucket --bucket gs://mfit-output-test --prefix test-report
+
+#create group of instances from instance template (run simultaneously # of VMs)
+gcloud compute instance-groups managed create gifixed --size 8 --template mfitfix 
+
+
+
+for other site
+#build Docker file and submit to container registry
+gcloud builds submit --tag gcr.io/hallowed-byte-303916/chpr2 
+
+#create instance template with docker container
+gcloud compute instance-templates create-with-container mfitmbf --machine-type e2-standard-2 --region=us-west1 --container-image gcr.io/hallowed-byte-303916/mfit_fixed 
+
+#ensure usage reports are sent to bucket
+gcloud compute project-info set-usage-bucket --bucket gs://mfit-output-test --prefix test-report
+
+#create group of instances from instance template (run simultaneously # of VMs)
+gcloud compute instance-groups managed create mbfixed --size 16 --template mfitmbf 
+

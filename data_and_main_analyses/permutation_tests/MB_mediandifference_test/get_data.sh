@@ -1,0 +1,54 @@
+#!/bin/bash
+
+gsutil -m cp \
+  "gs://mfitmb-output/iterCSV_MBpermit_9034680.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5220292.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9176609.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7374925.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_4580149.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_8689467.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3565233.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_2497347.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_2633157.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7755339.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5729532.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_2805986.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_743571.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_6922205.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_4945487.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_557047.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9069945.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7655377.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5484736.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3257008.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_6234764.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3085593.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9095982.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3003677.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9305792.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_198749.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5121080.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5947259.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7755178.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5228274.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7213947.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_6183101.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5350224.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_2414242.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_4492619.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_410650.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5470692.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_2648184.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_1314060.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_7003641.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_4172705.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9316534.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3535644.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_5918406.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_8540149.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9248857.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_3478649.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_1733500.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_9145827.csv" \
+  "gs://mfitmb-output/iterCSV_MBpermit_8111506.csv" \
+  .

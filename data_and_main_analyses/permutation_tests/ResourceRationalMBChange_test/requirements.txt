@@ -1,0 +1,12 @@
+numpy
+seaborn
+scipy
+gcsfs
+google-cloud-storage
+pandas
+matplotlib
+
+
+
+
+

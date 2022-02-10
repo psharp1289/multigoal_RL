@@ -1,0 +1,64 @@
+": ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>)
+"
+Hide log summary
+Expand nested fields
+Copy to clipboard
+Copy link
+{
+insertId: "19iglprg2kkao4m"
+jsonPayload: {3}
+resource: {2}
+timestamp: "2021-02-05T22:27:27.328913952Z"
+labels: {1}
+logName: "projects/hallowed-byte-303916/logs/cos_containers"
+receiveTimestamp: "2021-02-05T22:27:33.439667608Z"
+}
+
+
+
+
+
+" "reason": "forbidden" "
+
+" "domain": "global", "
+
+
+" "message": "sharphome@hallowed-byte-303916.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.", "
+
+
+
+" "message": "sharphome@hallowed-byte-303916.iam.gserviceaccount.com does not have storage.objects.create access to the Google Cloud Storage object.", "
+
+
+" "code": 403, "
+
+
+" "error": { "
+
+
+"google.api_core.exceptions.Forbidden: 403 POST https://storage.googleapis.com/upload/storage/v1/b/mfitmb-output/o?uploadType=multipart: { "
+
+
+" raise exceptions.from_http_status(response.status_code, message, response=response) "
+
+" File "/usr/local/lib/python3.9/site-packages/google/cloud/storage/blob.py", line 3888, in _raise_from_invalid_response "
+
+" _raise_from_invalid_response(exc) "
+
+" File "/usr/local/lib/python3.9/site-packages/google/cloud/storage/blob.py", line 2361, in upload_from_file "
+
+" self.upload_from_file( "
+
+" File "/usr/local/lib/python3.9/site-packages/google/cloud/storage/blob.py", line 2462, in upload_from_filename "
+
+" gcs.bucket('mfitmb-output').blob('iterCSV_heurDiff_{}.csv'.format(np.random.randint(10000000000))).upload_from_filename('local_file.csv', content_type='text/csv') "
+
+" File "//./nonparametric_test_parameters.py", line 1241, in <module> "
+
+"Traceback (most recent call last): "
+
+
+"During handling of the above exception, another exception occurred: "
+
+
+"google.resumable_media.common.InvalidResponse: ('Request failed with status code', 403, 'Expected one of', <HTTPStatus.OK: 200>) "

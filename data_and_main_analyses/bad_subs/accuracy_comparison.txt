@@ -1,0 +1,2 @@
+Accuracy 192 included subjects: 100.0625, SD accuracy: 17.393313190706365
+Accuracy excluded subjects: 77.64102564102564, SD accuracy: 11.396101851492856
